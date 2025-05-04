@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 3</title>
+    <style>
+        .main-div {
+            width: 800px;
+            height: 40px;
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        .step {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            text-align: center;
+        }
+        
+        .active {
+            background-color: #7aaed8;
+            color: white;
+        }
+        
+        .inactive {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        form {
+      background: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      max-width: 600px;
+      margin: 50px auto;
+        }
+        label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], input[type="password"], select, textarea {
+      width: 97%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 100px;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .checkbox input {
+      margin-right: 10px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: start;
+      margin-top: 20px;
+    }
+    img {
+        width: 130px;
+        height: 35px;
+        object-fit: scale-down;
+    }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="step inactive">Step 1: Account</div>
+        <div class="step inactive">Step 2: Personal Details</div>
+        <div class="step active">Step 3: Your Review</div>
+    </div>
+    <form>
+        <h2>Your Review</h2>
+        <label for="hear">How did you hear about us?</label>
+        <select id="hear">
+          <option>Select your option</option>
+          <option>Friend</option>
+          <option>Social Media</option>
+          <option>Advertisement</option>
+        </select><label>Would you visit again?</label>
+    <input type="radio" id="yes" name="visit"> Yes
+    <input type="radio" id="no" name="visit"> No
+    <input type="radio" id="maybe" name="visit"> Maybe
+    
+    <label for="comments">Comments:</label>
+    <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+    
+    <label>Documents:</label>
+    <input type="file">
+    
+    <div class="checkbox">
+      <input type="checkbox" id="updates" checked>
+      <label for="updates">Sign me up for email updates</label>
+    </div>
+    
+    <div class="buttons">
+        <a href="form 2.html"><img src="Assignment5/Images/back.png" alt=""></a>
+        <a href=""><img src="Assignment5/Images/submit.png" alt=""></a>
+    </div>
+    
+      </form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* Top bar */
+        .main-div {
+            width: 800px;
+            height: 40px;
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        .step {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            text-align: center;
+        }
+        
+        .active {
+            background-color: #7aaed8;
+            color: white;
+        }
+        
+        .inactive {
+            background-color: #e0e0e0;
+            color: black;
+        }
+        /* first form */
+        form {
+      background: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      max-width: 600px;
+      margin: 50px auto;
+        }
+        label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], input[type="password"], select, textarea {
+      width: 97%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: start;
+      margin-top: 20px;
+    }
+    img {
+        width: 130px;
+        height: 35px;
+        object-fit: scale-down;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- top bar -->
+    <div class="main-div">
+        <div class="step active">Step 1: Account</div>
+        <div class="step inactive">Step 2: Personal Details</div>
+        <div class="step inactive">Step 3: Your Review</div>
+    </div>
+    <form>
+        <h2>Account</h2>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter Email"><label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter Password">
+    
+    <label for="confirm">Confirm Password:</label>
+    <input type="password" id="confirm" placeholder="Confirm Password">
+    
+    <div class="buttons">
+        <a href="main page.html"><img src="Assignment5/Images/back.png" alt=""></a>
+        <a href="form 2.html"><img src="Assignment5/Images/next.png" alt=""></a>
+      
+    </div>
+    
+    </form>
+</body>
+</html>

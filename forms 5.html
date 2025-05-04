@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+    .form-slider {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .form-slider div {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      background-color: #ccc;
+      color: black;
+      width: 50px;
+    }
+    .form-slider .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .form-slider .current {
+      background-color: #4682B4;
+      color: white;
+      width: 50px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], input[type="password"], select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 100px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .buttons button {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .buttons button:hover {
+      background-color: #0055a5;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .checkbox input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body> 
+    <div class="form-slider">
+    <div class="current">Step 1: Account</div>
+    <div>Step 2: Personal Details</div>
+    <div>Step 3: Your Review</div>
+  </div>  <form>
+    <h2>Account</h2>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" placeholder="Enter Email"><label for="password">Password:</label>
+<input type="password" id="password" placeholder="Enter Password">
+
+<label for="confirm">Confirm Password:</label>
+<input type="password" id="confirm" placeholder="Confirm Password">
+
+<div class="buttons">
+  <button type="button">Back</button>
+  <button type="button">Next</button>
+</div>
+
+  </form>  <!-- Step 2 -->  <div class="form-slider">
+    <div class="active">Step 1: Account</div>
+    <div class="current">Step 2: Personal Details</div>
+    <div>Step 3: Your Review</div>
+  </div>  <form>
+    <h2>Personal Details</h2>
+    <label for="first">First Name:</label>
+    <input type="text" id="first" placeholder="Enter First Name"><label for="last">Last Name:</label>
+<input type="text" id="last" placeholder="Enter Last Name">
+
+<label for="cnic">CNIC:</label>
+<input type="text" id="cnic" placeholder="xxxxx-xxxxxxx-x">
+
+<label for="social">Social Link:</label>
+<input type="text" id="social" placeholder="Enter Facebook/LinkedIn profile link">
+
+<div class="buttons">
+  <button type="button">Back</button>
+  <button type="button">Next</button>
+</div>
+
+  </form>  <!-- Step 3 -->  <div class="form-slider">
+    <div class="active">Step 1: Account</div>
+    <div class="active">Step 2: Personal Details</div>
+    <div class="current">Step 3: Your Review</div>
+  </div>  <form>
+    <h2>Your Review</h2>
+    <label for="hear">How did you hear about us?</label>
+    <select id="hear">
+      <option>Select your option</option>
+      <option>Friend</option>
+      <option>Social Media</option>
+      <option>Advertisement</option>
+    </select><label>Would you visit again?</label>
+<input type="radio" id="yes" name="visit"> Yes
+<input type="radio" id="no" name="visit"> No
+<input type="radio" id="maybe" name="visit"> Maybe
+
+<label for="comments">Comments:</label>
+<textarea id="comments" placeholder="Enter your comments here..."></textarea>
+
+<label>Documents:</label>
+<input type="file">
+
+<div class="checkbox">
+  <input type="checkbox" id="updates" checked>
+  <label for="updates">Sign me up for email updates</label>
+</div>
+
+<div class="buttons">
+  <button type="button">Back</button>
+  <button type="submit">Submit</button>
+</div>
+
+  </form></body>
+</html>
